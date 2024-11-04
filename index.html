@@ -129,7 +129,7 @@
 
                 xhr.addEventListener("load", function () {
 
-                    console.log(xhr.response);
+                    // console.log(xhr.response);
                     
                     for (let i = 0; i < xhr.response.length; i++) {
                         let tr = document.createElement("tr");
@@ -166,7 +166,7 @@
 
                         // Attaching ID to button
                         button.dataset.idMetadata = id;
-                        console.log(button.dataset.idMetadata);
+                        // console.log(button.dataset.idMetadata);
 
                         button.onclick = function() {
                             deleteItem(button.dataset.idMetadata);
@@ -183,7 +183,7 @@
 
         // Deleting Operation
         async function deleteItem(id) {
-            console.log(`deleting ${id}!`);
+            // console.log(`deleting ${id}!`);
             let xhr = new XMLHttpRequest();
             try {
                 // Using async below to properly refresh table
